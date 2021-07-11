@@ -26,11 +26,17 @@ function ValidaCPF(cpfEnviado) {
 ValidaCPF.prototype.valida = function() {
     if(typeof this.cpfLimpo === 'undefined') return false;
     if(this.cpfLimpo.length !== 11) return false;
+
+    const cpfParcial = this.cpfLimpo.slice(0, -2);
+    const digito1 = this.criaDigito(cpfParcial);
+    const digito2 = this.criaDigito(cpfParcial + digito1);
+    
     return true;
 };
 
 ValidaCPF.prototype.criaDigito = function(cpfParcial) {
-    
+    const cpfArray = Array.from(cpfParcial);
+
 }
 
 
