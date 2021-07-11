@@ -50,6 +50,10 @@ ValidaCPF.prototype.criaDigito = function(cpfParcial) {
     return digito > 9 ? '0' : String(digito);
 }
 
+ValidaCPF.prototype.isSequencia = function() {
+    const sequencia = this.cpfLimpo[0].repeat(this.cpfLimpo.length);
+    return sequencia === this.cpfLimpo;
+  };
 
 cpf.valida();
 
