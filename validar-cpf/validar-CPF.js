@@ -14,3 +14,9 @@ Se o número digito for maior que 9, consideramos 0.
 11 - (284 % 11) = 2 (Primeiro dígito)
 Se o número digito for maior que 9, consideramos 0.
 */
+
+function ValidaCPF(cpfEnviado) {
+
+}
+
+const cpf = new ValidaCPF('123.576.462-60');
