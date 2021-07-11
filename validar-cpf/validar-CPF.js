@@ -23,9 +23,10 @@ function ValidaCPF(cpfEnviado) {
     })
 }
 
-ValidaCPF.prototype.isSequencia = function() {
-
-
+ValidaCPF.prototype.valida = function() {
+    if(typeof this.cpfLimpo === 'undefined') return false;
+    if(this.cpfLimpo.length !== 11) return false;
+    return true;
 };  
 
 cpf.valida();
