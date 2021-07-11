@@ -27,7 +27,12 @@ ValidaCPF.prototype.valida = function() {
     if(typeof this.cpfLimpo === 'undefined') return false;
     if(this.cpfLimpo.length !== 11) return false;
     return true;
-};  
+};
+
+ValidaCPF.prototype.criaDigito = function(cpfParcial) {
+    
+}
+
 
 cpf.valida();
 
