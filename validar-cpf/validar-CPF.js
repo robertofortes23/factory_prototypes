@@ -23,6 +23,11 @@ function ValidaCPF(cpfEnviado) {
     })
 }
 
+ValidaCPF.prototype.isSequencia = function() {
+
+
+};  
+
 cpf.valida();
 
 const cpf = new ValidaCPF('123.576.462-60');
