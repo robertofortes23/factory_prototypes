@@ -55,6 +55,11 @@ ValidaCPF.prototype.isSequencia = function() {
     return sequencia === this.cpfLimpo;
   };
 
-cpf.valida();
+  if(cpf.valida()) {
+    console.log('Cpf válido');
+  } else {
+    console.log('Cpf inválido');
+  }
+  
 
 const cpf = new ValidaCPF('123.576.462-60');
