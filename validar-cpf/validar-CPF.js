@@ -30,12 +30,19 @@ ValidaCPF.prototype.valida = function() {
     const cpfParcial = this.cpfLimpo.slice(0, -2);
     const digito1 = this.criaDigito(cpfParcial);
     const digito2 = this.criaDigito(cpfParcial + digito1);
-    
+
     return true;
 };
 
 ValidaCPF.prototype.criaDigito = function(cpfParcial) {
     const cpfArray = Array.from(cpfParcial);
+
+    let regressivo = cpfArray.length + 1;
+    const total = cpfArray.reduce((ac, val) => {
+      ac += (regressivo * Number(val));
+      regressivo--;
+      return ac;
+    }, 0);
 
 }
 
