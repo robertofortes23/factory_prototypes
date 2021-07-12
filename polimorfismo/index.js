@@ -7,3 +7,7 @@ function Conta(agencia, conta, saldo) {
 Conta.prototype.sacar = function(valor) {
 
 }
+
+Conta.prototype.depositar = function(valor) {
+
+};
