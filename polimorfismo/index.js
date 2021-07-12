@@ -4,12 +4,12 @@ function Conta(agencia, conta, saldo) {
     this.saldo = saldo;
 }
 
-function CC(agencia, conta, saldo, limite) {
+function CP(agencia, conta, saldo, limite) {
   Conta.call(this, agencia, conta, saldo);
   this.limite = limite;
 }
-CC.prototype = Object.create(Conta.prototype);
-CC.prototype.constructor = CC;
+CP.prototype = Object.create(Conta.prototype);
+CP.prototype.constructor = CP;
 
 Conta.prototype.sacar = function(valor) {
     if(valor > this.saldo) {
