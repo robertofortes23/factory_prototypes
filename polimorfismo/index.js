@@ -11,3 +11,7 @@ Conta.prototype.sacar = function(valor) {
 Conta.prototype.depositar = function(valor) {
 
 };
+
+Conta.prototype.verSaldo = function() {
+
+};
