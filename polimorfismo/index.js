@@ -5,7 +5,9 @@ function Conta(agencia, conta, saldo) {
 }
 
 Conta.prototype.sacar = function(valor) {
-
+    if(valor > (this.saldo + this.limite)) {
+    console.log(`Saldo insuficiente: ${this.saldo}`);
+    return;
 }
 
 Conta.prototype.depositar = function(valor) {
