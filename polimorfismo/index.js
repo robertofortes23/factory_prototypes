@@ -3,3 +3,7 @@ function Conta(agencia, conta, saldo) {
     this.conta = conta;
     this.saldo = saldo;
 }
+
+Conta.prototype.sacar = function(valor) {
+
+}
