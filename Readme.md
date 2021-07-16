@@ -6,3 +6,4 @@ Protótipos são o mecanismo pelo qual objetos JavaScript herdam recursos uns do
 1. Validando CPF usando JavaScript
 2. Polimorfismo
 3. Factory_prototypes
+4. Herança
