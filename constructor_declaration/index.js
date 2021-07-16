@@ -11,4 +11,17 @@ function createFunction1() {
 }
 
 var f1 = createFunction1();
-console.log(f1()); 
+console.log(f1());
+
+//Função declarativa:
+
+function createFunction2() {
+    var x = 20;
+    function f() {
+        return x; // this |x| refers local |x| above
+    }
+    return f;
+}
+
+var f2 = createFunction2();
+console.log(f2()); 
